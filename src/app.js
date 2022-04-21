@@ -52,3 +52,23 @@ const contactsList = [
 ]
 
 // Your code goes here
+
+const allcontactbox = document.getElementById("display_all_contacts")
+
+for(i=0; i < Object.keys(contactsList).length; i++){
+  allcontactbox.appendChild(document.createElement("div"))
+}
+
+const childDivArr= allcontactbox.querySelectorAll('div')
+for(i=0; i < childDivArr.length; i++){
+  childDivArr[i].appendChild(document.createElement("img"))
+  if(contactsList[i].name== '"major" Motoko'){
+    childDivArr[i].querySelector("img").setAttribute('src','./img/motoko.png')
+  }else{
+    childDivArr[i].querySelector("img").setAttribute('src','./img/'+contactsList[i].name.toLocaleLowerCase() +'.png')
+  }
+  
+  
+}
+
+
