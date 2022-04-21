@@ -74,6 +74,7 @@ main {
 }
 
 #individual_contact {
+  display: none;
   display: flex;
   flex-direction: row;
   flex-grow:9;

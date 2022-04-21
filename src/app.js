@@ -72,6 +72,8 @@ for(i=0; i < childDivArr.length; i++){
 }
 
 
+const Singlecontact = document.getElementById('display_single_contact')
+
 function pullupSingle(){
 
 
