@@ -60,6 +60,7 @@ for(i=0; i < Object.keys(contactsList).length; i++){
 }
 
 const childDivArr= allcontactbox.querySelectorAll('div')
+
 for(i=0; i < childDivArr.length; i++){
   childDivArr[i].appendChild(document.createElement("img"))
   childDivArr[i].appendChild(document.createElement("p"))
