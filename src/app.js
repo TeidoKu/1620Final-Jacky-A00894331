@@ -62,13 +62,18 @@ for(i=0; i < Object.keys(contactsList).length; i++){
 const childDivArr= allcontactbox.querySelectorAll('div')
 for(i=0; i < childDivArr.length; i++){
   childDivArr[i].appendChild(document.createElement("img"))
+  childDivArr[i].appendChild(document.createElement("p"))
   if(contactsList[i].name== '"major" Motoko'){
     childDivArr[i].querySelector("img").setAttribute('src','./img/motoko.png')
   }else{
     childDivArr[i].querySelector("img").setAttribute('src','./img/'+contactsList[i].name.toLocaleLowerCase() +'.png')
   }
-  
-  
+  childDivArr[i].querySelector("p").innerText = contactsList[i].name
 }
 
 
+function pullupSingle(){
+
+
+
+}

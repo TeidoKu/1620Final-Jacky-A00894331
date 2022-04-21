@@ -116,8 +116,8 @@ main {
 
 #display_all_contacts div {
   display: flex;
+  flex-direction:column;
   flex-basis: auto;
-  height:108px;
   background-color: var(--red);
   border-radius: 5px;
   padding: 10px;
