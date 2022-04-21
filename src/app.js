@@ -70,13 +70,12 @@ for(i=0; i < childDivArr.length; i++){
     childDivArr[i].querySelector("img").setAttribute('src','./img/'+contactsList[i].name.toLocaleLowerCase() +'.png')
   }
   childDivArr[i].querySelector("p").innerText = contactsList[i].name
+  childDivArr[i].addEventListener('click', ()=> {pullupSingle()})
 }
 
 
 const Singlecontact = document.getElementById('display_single_contact')
 
 function pullupSingle(){
-
-
-
+  console.log("this will pull up signle contact")
 }
