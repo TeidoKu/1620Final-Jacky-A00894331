@@ -78,4 +78,5 @@ const Singlecontact = document.getElementById('display_single_contact')
 
 function pullupSingle(){
   console.log("this will pull up signle contact")
+
 }
